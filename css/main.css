@@ -1,0 +1,25 @@
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.roller {
+    display: flex;
+}
+
+.roller ul {
+    display: flex;
+    width: 1920px;
+    animation: rolling 30s linear infinite alternate;
+}
+
+@keyframes rolling {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1920px;
+    }
+}
