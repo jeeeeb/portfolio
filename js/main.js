@@ -6,12 +6,12 @@ $(function () {
     });
 
     $('#wrap>section').on('mousewheel', function (e, d) {
-        if (d > 0) { // 스크롤을 올렸을 때
+        if (d > 0) {
             let prv = $(this).prev().offset().top;
             $('html,body').stop().animate({
                 scrollTop: prv
             });
-        } else if (d < 0) { //스크롤을 내렸을 때
+        } else if (d < 0) {
             let nxt = $(this).next().offset().top;
             $('html,body').stop().animate({
                 scrollTop: nxt
@@ -40,7 +40,7 @@ $(function () {
         } else {
             $('#goTop').css({ opacity: 0 });
         }
-        if (scr >= intro && scr < about) {
+        if (scr >= 0 && scr < about) {
             $('#menu .toggle_menu span').css({ backgroundColor: '#fff' });
             $('#menu nav>div').css({ color: '#fff' });
         } else if (scr >= about && scr <= work3) {

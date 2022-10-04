@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>조은별</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
-<body>
+<body oncontextmenu="return false" onselectstart="return false">
     <div id="wrap">
         <section id="intro">
             <div id='stars'></div>
@@ -183,12 +183,28 @@
                             <div class="skill"></div>
                             <p>90%</p>
                         </div><!-- skillBar -->
-                        <p class="skillTxt">Vector 및 CMYK 컬러모드의 이해를 바탕으로 명함, 브로슈어, 전단지, X배너 등 인쇄물 제작 경험이 있고 펜툴을 활용한 캐릭터
+                        <p class="skillTxt">Vector 및 CMYK 컬러모드의 이해를 바탕으로 명함, 브로슈어, 전단지, X배너 등 인쇄물 제작 경험이 있고 펜툴을 활용한 간단한
+                            캐릭터
                             제작이 가능합니다.</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <section id="highdev">
+            <div class="highdev_in">
+                <h2>
+                    채용공고 디자인 리뉴얼
+                    <span>
+                        귀사의 담당업무인 <strong>'디자인 결과물에 대한 퀄리티 관리 및 유지'</strong>를 보여드리기 위해<br>
+                        채용공고 이미지를 리디자인 해보았습니다.
+                    </span>
+                </h2>
+                <div class="thumb">
+                    <img src="img/saramin.jpg">
+                </div>
+                <a href="portfolio/highdev/index.html" target="_blank">자세히보기 ></a>
+            </div>
+        </section> -->
         <section id="work1">
             <div class="work1_in">
                 <h2>
@@ -206,12 +222,6 @@
                             <h5>rs01</h5>
                         </a></div>
                     <div class="rs04"><a href="#">
-                            <h5>rs01</h5>
-                        </a></div>
-                    <div class="rs05"><a href="#">
-                            <h5>rs01</h5>
-                        </a></div>
-                    <div class="rs06"><a href="#">
                             <h5>rs01</h5>
                         </a></div>
                 </div><!-- rsSlider -->
@@ -236,12 +246,6 @@
                     <div class="web04"><a href="#">
                             <h5>web01</h5>
                         </a></div>
-                    <div class="web05"><a href="#">
-                            <h5>web01</h5>
-                        </a></div>
-                    <div class="web06"><a href="#">
-                            <h5>web01</h5>
-                        </a></div>
                 </div>
             </div>
         </section>
@@ -252,23 +256,29 @@
                     <span>실무에서 작업한 그래픽 디자인 작업물입니다.</span>
                 </h2>
                 <div class="designSlider">
-                    <div class="desi01"><a href="#">
+                    <div class="desi01"><a href="portfolio/event/index.html" target="_blank">
                             <h5>SNS EVENT</h5>
+                            <div class="cover"></div>
                         </a></div>
-                    <div class="desi02"><a href="#">
+                    <div class="desi02"><a href="portfolio/detailpage/index.html" target="_blank">
                             <h5>상세페이지</h5>
+                            <div class="cover"></div>
                         </a></div>
-                    <div class="desi03"><a href="#">
+                    <div class="desi03"><a href="portfolio/blogNcharacter/index.html" target="_blank">
                             <h5>BLOG</h5>
+                            <div class="cover"></div>
                         </a></div>
-                    <div class="desi04"><a href="#">
+                    <div class="desi04"><a href="portfolio/card/index.html" target="_blank">
                             <h5>CARD NEWS</h5>
+                            <div class="cover"></div>
                         </a></div>
-                    <div class="desi05"><a href="#">
-                            <h5>WEBSITE MAIN</h5>
+                    <div class="desi05"><a href="portfolio/banner/index.html" target="_blank">
+                            <h5>BANNER</h5>
+                            <div class="cover"></div>
                         </a></div>
-                    <div class="desi06"><a href="#">
+                    <div class="desi06"><a href="portfolio/print/index.html" target="_blank">
                             <h5>PRINT</h5>
+                            <div class="cover"></div>
                         </a></div>
                 </div>
             </div>
@@ -310,185 +320,5 @@
         </div>
         <button id="goTop"><img src="img/top.png"></button>
     </div>
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js'></script>
-    <script>
-        var cursor = $(".your-cursor"),
-            follower = $(".follow");
-
-        var posX = 0,
-            posY = 0;
-
-        var mouseX = 0,
-            mouseY = 0;
-
-        TweenMax.to({}, 0.016, {
-            repeat: -1,
-            onRepeat: function () {
-                posX += (mouseX - posX) / 9;
-                posY += (mouseY - posY) / 9;
-
-                TweenMax.set(follower, {
-                    css: {
-                        left: posX - 12,
-                        top: posY - 12
-                    }
-                });
-
-                TweenMax.set(cursor, {
-                    css: {
-                        left: mouseX,
-                        top: mouseY
-                    }
-                });
-            }
-        });
-
-        $(document).on("mousemove", function (e) {
-            mouseX = e.pageX;
-            mouseY = e.pageY;
-        });
-
-        $("a").on("mouseenter", function () {
-            cursor.addClass("active");
-            follower.addClass("active");
-        });
-        $("a").on("mouseleave", function () {
-            cursor.removeClass("active");
-            follower.removeClass("active");
-        });
-
-
-        let canvas = document.getElementById('canvas');
-        let flr = Math.floor;
-
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-
-        let halfw = canvas.width / 2,
-            halfh = canvas.height / 2,
-            step = 2,
-            warpZ = 12,
-            speed = 0.075;
-        let stampedDate = new Date();
-
-        let ctx = canvas.getContext('2d');
-
-        ctx.fillStyle = 'black';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        function rnd(num1, num2) {
-            return flr(Math.random() * num2 * 2) + num1;
-        }
-
-        function getColor() {
-            return 'hsla(200,100%, ' + rnd(50, 100) + '%, 1)';
-        }
-
-        let star = function () {
-            let v = vec3.fromValues(rnd(0 - halfw, halfw), rnd(0 - halfh, halfh), rnd(1, warpZ));
-
-
-            this.x = v[0];
-            this.y = v[1];
-            this.z = v[2];
-            this.color = getColor();
-
-
-            this.reset = function () {
-                v = vec3.fromValues(rnd(0 - halfw, halfw), rnd(0 - halfh, halfh), rnd(1, warpZ));
-
-                this.x = v[0];
-                this.y = v[1];
-                this.color = getColor();
-                vel = this.calcVel();
-            }
-
-            this.calcVel = function () {
-
-                return vec3.fromValues(0, 0, 0 - speed);
-            };
-
-            let vel = this.calcVel();
-
-            this.draw = function () {
-                vel = this.calcVel();
-                v = vec3.add(vec3.create(), v, vel);
-                let x = v[0] / v[2];
-                let y = v[1] / v[2];
-                let x2 = v[0] / (v[2] + speed * 0.50);
-                let y2 = v[1] / (v[2] + speed * 0.50);
-
-                ctx.strokeStyle = this.color;
-                ctx.beginPath();
-                ctx.moveTo(x, y);
-                ctx.lineTo(x2, y2);
-                ctx.stroke();
-
-                if (x < 0 - halfw || x > halfw || y < 0 - halfh || y > halfh) {
-                    this.reset();
-                }
-            };
-
-        }
-
-        let starfield = function () {
-            let numOfStars = 250;
-
-            let stars = [];
-
-            function _init() {
-                for (let i = 0, len = numOfStars; i < len; i++) {
-                    stars.push(new star());
-                }
-            }
-
-            _init();
-
-            this.draw = function () {
-                ctx.translate(halfw, halfh);
-
-                for (let i = 0, len = stars.length; i < len; i++) {
-                    let currentStar = stars[i];
-
-                    currentStar.draw();
-                }
-            };
-
-        }
-
-        let mStarField = new starfield();
-
-        function draw() {
-
-            // make 5 seconds
-            let millSeconds = 1000 * 10;
-
-            let currentTime = new Date();
-
-            speed = 0.010;
-
-            ctx.setTransform(1, 0, 0, 1, 0, 0);
-            ctx.fillStyle = 'rgba(0,0,0,0.2)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            mStarField.draw();
-
-            window.requestAnimationFrame(draw);
-        }
-
-        draw();
-
-        window.onresize = function () {
-            canvas.width = canvas.offsetWidth;
-            canvas.height = canvas.offsetHeight;
-
-            halfw = canvas.width / 2;
-            halfh = canvas.height / 2;
-        };
-
-    </script>
-</body>
 
 </html>

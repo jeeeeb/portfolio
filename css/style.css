@@ -224,6 +224,7 @@ section h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
@@ -238,10 +239,10 @@ section h2 {
     position: absolute;
     left: 50%;
     margin-left: -15px;
-    animation: scroll 1.5s ease-in infinite;
+    animation: scroll_down 1.5s ease-in infinite;
 }
 
-@keyframes scroll {
+@keyframes scroll_down {
     0% {
         bottom: 65px;
     }
@@ -439,6 +440,73 @@ section h2 {
     line-height: 1.4em;
 }
 
+#highdev {
+    display: flex;
+    align-items: center;
+}
+
+#highdev h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#highdev h2 span {
+    display: block;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.highdev_in {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.highdev_in>a {
+    display: block;
+    width: 125px;
+    height: 40px;
+    background: pink;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.highdev_in .thumb {
+    width: 680px;
+    height: 500px;
+    background-color: pink;
+    margin: 0 auto 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.highdev_in .thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.highdev_in .thumb img {
+    width: 680px;
+    height: 4482px;
+    animation: scroll 30s linear infinite alternate;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes scroll {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -3982px;
+    }
+}
+
 #work1 {
     display: flex;
     align-items: center;
@@ -469,14 +537,13 @@ section h2 {
 }
 
 .work1_in .rsSlider>div {
-    width: 440px;
+    width: 670px;
     height: 300px;
     background-color: #fe5196;
 }
 
 .work1_in .rsSlider>div:nth-child(1),
-.work1_in .rsSlider>div:nth-child(2),
-.work1_in .rsSlider>div:nth-child(3) {
+.work1_in .rsSlider>div:nth-child(2) {
     margin-bottom: 20px;
 }
 
@@ -512,14 +579,13 @@ section h2 {
 }
 
 .work2_in .webSlider>div {
-    width: 440px;
+    width: 670px;
     height: 300px;
     background-color: #7169f9;
 }
 
 .work2_in .webSlider>div:nth-child(1),
-.work2_in .webSlider>div:nth-child(2),
-.work2_in .webSlider>div:nth-child(3) {
+.work2_in .webSlider>div:nth-child(2) {
     margin-bottom: 20px;
 }
 
@@ -558,6 +624,30 @@ section h2 {
     width: 440px;
     height: 300px;
     background-color: #ff7c6d;
+    background: url(../img/saramin.jpg) no-repeat center center / 100% auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.work3_in .designSlider>div h5 {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.work3_in .designSlider>div .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .work3_in .designSlider>div:nth-child(1),
