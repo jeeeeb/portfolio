@@ -2,11 +2,38 @@
 /* CSS Document */
 
 
-#wrap{background: #eee;}
-#wrap p{text-align:center;}
-#wrap p img{padding:10px 0;}
-.s4{width:400px;}
-.s64{width:640px;}
-.s6{width:600px;}
-.s96{width:960px;}
-.s7{width:700px;}
+#wrap {
+    background: #eee;
+}
+
+#wrap>div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#wrap>div:first-child {
+    padding-top: 30px;
+}
+
+#wrap>div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    padding-top:40px;
+    margin:0 0 40px 0;
+    font-size: 24px;
+    line-height: 1em;
+    border-bottom: 1px solid #555;
+    color:#111;
+    height: 12px;
+}
+h1 span{
+    background-color: #eee;
+    padding:0 20px;
+}
+.size img{
+    width:550px;
+}

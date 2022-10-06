@@ -1,6 +1,103 @@
 @charset "utf-8";
 /* CSS Document */
-
-#wrap p{width:500px; margin:0 auto;}
-#wrap p img{padding:5px 0;}
-#wrap .sec{padding-top:50px;}
+h1{
+    text-align: center;
+    margin:40px 0;
+    font-size: 24px;
+    line-height: 1em;
+    border-bottom: 1px solid #555;
+    color:#111;
+    height: 12px;
+}
+h1 span{
+    background-color: #fff;
+    padding:0 20px;
+}
+#wrap>div {
+    width:500px;
+    margin:0 auto;
+    position:relative;
+}
+.slick-arrow{
+    position:absolute;
+    top:50%; transform: translateY(-50%);
+}
+.slick-arrow{
+    width:0; height:0;
+    font-size: 0;
+    background-color: transparent;
+}
+.news01 .slick-prev{
+    left:-80px;
+    z-index: 100;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid gold;
+}
+.news01 .slick-next{
+    right:-80px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid gold;
+    border-right: 30px solid transparent;
+}
+.news02 .slick-prev{
+    left:-80px;
+    z-index: 100;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid pink;
+}
+.news02 .slick-next{
+    right:-80px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid pink;
+    border-right: 30px solid transparent;
+}
+.news03 .slick-prev{
+    left:-80px;
+    z-index: 100;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid dodgerblue;
+}
+.news03 .slick-next{
+    right:-80px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid dodgerblue;
+    border-right: 30px solid transparent;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li{
+    margin:20px 4px 40px 4px;
+}
+.slick-dots li button{
+    width:10px; height:10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border:0;
+    font-size: 0;
+}
+.news01 .slick-dots li.slick-active button{
+    width:30px;
+    border-radius: 15px;
+    background-color: gold;
+}
+.news02 .slick-dots li.slick-active button{
+    width:30px;
+    border-radius: 15px;
+    background-color: pink;
+}
+.news03 .slick-dots li.slick-active button{
+    width:30px;
+    border-radius: 15px;
+    background-color: dodgerblue;
+}

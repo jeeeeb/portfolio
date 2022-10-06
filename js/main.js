@@ -22,15 +22,15 @@ $(function () {
     let intro = $('#intro').offset().top;
     let about = $('#about').offset().top;
     let skills = $('#skills').offset().top;
-    let work1 = $('#work1').offset().top;
-    let work2 = $('#work2').offset().top;
-    let work3 = $('#work3').offset().top;
+    let highdev = $('#highdev').offset().top;
+    let Graphic = $('#Graphic').offset().top;
+    let web = $('#web').offset().top;
     let contact = $('#contact').offset().top;
 
     $(window).scroll(function () {
         let scr = $(this).scrollTop();
         let moveBar = $('.skill');
-        if (scr >= skills && scr < work1) {
+        if (scr >= skills && scr < highdev) {
             moveBar.addClass('on');
         } else {
             moveBar.removeClass('on');
@@ -43,7 +43,7 @@ $(function () {
         if (scr >= 0 && scr < about) {
             $('#menu .toggle_menu span').css({ backgroundColor: '#fff' });
             $('#menu nav>div').css({ color: '#fff' });
-        } else if (scr >= about && scr <= work3) {
+        } else if (scr >= about && scr <= web) {
             $('#menu .toggle_menu span').css({ backgroundColor: '#000' });
             $('#menu nav>div').css({ color: '#000' });
         } else if (scr >= contact) {
@@ -61,6 +61,15 @@ $(function () {
 
     $('#goTop').on('click', function () {
         $('html,body').stop().animate({ scrollTop: 0 }, 800);
+    })
+
+    $('#menu nav div a').on('click', function (e) {
+        e.preventDefault();
+        let target = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top
+        });
+        $('#menu').toggleClass('slide');
     })
 
 })
