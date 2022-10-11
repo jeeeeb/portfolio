@@ -21,9 +21,22 @@ h1 span {
     position: relative;
 }
 
+.new {
+    width: 500px;
+}
+
+.new img {
+    width: 100%;
+}
+
 .new_1,
 .new_2 {
-    width: 720px;
+    width: 500px;
+}
+
+.new_1 img,
+.new_2 img {
+    width: 100%;
 }
 
 .news01,
@@ -45,6 +58,22 @@ h1 span {
     background-color: transparent;
 }
 
+.new .slick-prev {
+    left: -80px;
+    z-index: 100;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid gold;
+}
+
+.new .slick-next {
+    right: -80px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid gold;
+    border-right: 30px solid transparent;
+}
 
 .new_1 .slick-prev {
     left: -80px;
@@ -73,23 +102,6 @@ h1 span {
 }
 
 .new_2 .slick-next {
-    right: -80px;
-    border-bottom: 30px solid transparent;
-    border-top: 30px solid transparent;
-    border-left: 30px solid gold;
-    border-right: 30px solid transparent;
-}
-
-.new .slick-prev {
-    left: -80px;
-    z-index: 100;
-    border-bottom: 30px solid transparent;
-    border-top: 30px solid transparent;
-    border-left: 30px solid transparent;
-    border-right: 30px solid gold;
-}
-
-.new .slick-next {
     right: -80px;
     border-bottom: 30px solid transparent;
     border-top: 30px solid transparent;
@@ -171,6 +183,19 @@ h1 span {
     border-radius: 15px;
     background-color: gold;
 }
+
+.new_1 .slick-dots li.slick-active button {
+    width: 30px;
+    border-radius: 15px;
+    background-color: brown;
+}
+
+.new_2 .slick-dots li.slick-active button {
+    width: 30px;
+    border-radius: 15px;
+    background-color: gold;
+}
+
 
 .news01 .slick-dots li.slick-active button {
     width: 30px;
