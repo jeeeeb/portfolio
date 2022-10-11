@@ -1,18 +1,72 @@
 @charset "utf-8";
 /* CSS Document */
 
-#wrap p{text-align: center; padding:10px 0;}
-
-h1{
+#wrap p {
     text-align: center;
-    margin:40px 0;
+    padding: 10px 0;
+}
+
+h1 {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 24px;
     line-height: 1em;
     border-bottom: 1px solid #555;
-    color:#111;
+    color: #111;
     height: 12px;
 }
-h1 span{
+
+h1 span {
     background-color: #fff;
-    padding:0 20px;
+    padding: 0 20px;
+}
+
+.nav {
+    position: fixed;
+    top: 65px;
+    left: 50px;
+}
+
+.nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav li {
+    float: left;
+    color: #aaa;
+    margin-right: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    transform: scale(1.2);
+    color: #111;
+}
+
+.nav li.on {
+    transform: scale(1.2);
+    color: #111;
+}
+
+.cardnews {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    height: 600px;
+    margin-top: -300px;
+    display: flex;
+    align-items: center;
+}
+
+figure p {
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }

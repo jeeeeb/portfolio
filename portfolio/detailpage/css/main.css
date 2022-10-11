@@ -1,20 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
-#wrap{background: #eee;}
-#wrap li{width:750px; margin:0 auto; padding:5px;}
-#wrap li img{max-width: 100%; width: 750px;}
-h1{
+#wrap {
+    background: #eee;
+}
+
+#wrap li {
     text-align: center;
-    padding-top:40px;
-    margin:0 0 40px 0;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 0 40px 0;
     font-size: 24px;
     line-height: 1em;
     border-bottom: 1px solid #555;
-    color:#111;
+    color: #111;
     height: 12px;
 }
-h1 span{
+
+h1 span {
     background-color: #eee;
-    padding:0 20px;
+    padding: 0 20px;
 }

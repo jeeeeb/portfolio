@@ -12,6 +12,25 @@
 <body>
     <div id="wrap">
         <h1><span>CARD NEWS</span></h1>
+        <div class="new">
+            <div><img src="img/doctor/load01.png"></div>
+            <div><img src="img/doctor/load02.png"></div>
+            <div><img src="img/doctor/load03.png"></div>
+            <div><img src="img/doctor/load04.png"></div>
+            <div><img src="img/doctor/load05.png"></div>
+            <div><img src="img/doctor/load06.png"></div>
+        </div>
+        <div class="new_1">
+            <div><img src="img/doctor/buy01.png"></div>
+            <div><img src="img/doctor/buy02.png"></div>
+            <div><img src="img/doctor/buy03.png"></div>
+            <div><img src="img/doctor/buy04.jpg"></div>
+        </div>
+        <div class="new_2">
+            <div><img src="img/doctor/know01.png"></div>
+            <div><img src="img/doctor/know02.png"></div>
+            <div><img src="img/doctor/know03.jpg"></div>
+        </div>
         <div class="news01">
             <div><img src="img/01.jpg"></div>
             <div><img src="img/02.jpg"></div>
@@ -57,26 +76,56 @@
         integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        $('.new').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            speed: 1500,
+            puseOnHover: true,
+            variableWidth: true,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+        })
+        $('.new_1').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1800,
+            speed: 1500,
+            puseOnHover: true,
+            slidesToShow: 1,
+        })
+        $('.new_2').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1400,
+            speed: 1500,
+            puseOnHover: true,
+            slidesToShow: 1,
+        })
         $('.news01').slick({
-            dots:true,
-            autoplay:true,
-            autoplaySpeed:1500,
-            speed:1500,
-            puseOnHover:true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            speed: 1500,
+            puseOnHover: true,
+            slidesToShow: 1,
         });
         $('.news02').slick({
-            dots:true,
-            autoplay:true,
-            autoplaySpeed:1800,
-            speed:1200,
-            puseOnHover:true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1800,
+            speed: 1200,
+            puseOnHover: true,
+            slidesToShow: 1,
         });
         $('.news03').slick({
-            dots:true,
-            autoplay:true,
-            autoplaySpeed:1500,
-            speed:1000,
-            puseOnHover:true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            speed: 1000,
+            puseOnHover: true,
+            slidesToShow: 1,
         });
     </script>
 </body>

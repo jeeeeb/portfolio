@@ -360,7 +360,7 @@ section h2 {
 }
 
 .skills_in>div {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .skills_in>div h4 {
@@ -399,7 +399,7 @@ section h2 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: width 3s;
+    transition: width 3s ease;
 }
 
 .skills_in .html .skillBar .skill.on {
@@ -426,6 +426,10 @@ section h2 {
     width: 90%;
 }
 
+.skills_in .git .skillBar .skill.on {
+    width: 50%;
+}
+
 .skills_in>div .skillBar p {
     position: absolute;
     right: -50px;
@@ -447,7 +451,7 @@ section h2 {
 
 #highdev h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #highdev h2 span {
@@ -503,9 +507,9 @@ section h2 {
 
 .highdev_in .thumb {
     width: 680px;
-    height: 550px;
+    height: 500px;
     background-color: pink;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
     position: relative;
     overflow: hidden;
 }
@@ -531,7 +535,7 @@ section h2 {
     }
 
     100% {
-        top: -3932px;
+        top: -3982px;
     }
 }
 
@@ -746,7 +750,7 @@ section h2 {
     background: url(../img/semi.jpg) no-repeat -30px -380px;
 }
 
-.webSlider .web04 h5 span {
+.webSlider>div h5 span {
     display: block;
     font-size: 16px;
     font-weight: normal;

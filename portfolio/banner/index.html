@@ -11,24 +11,117 @@
 <body oncontextmenu="return false" onselectstart="return false">
     <div id="wrap">
         <h1><span>홈페이지 팝업 배너 제작</span></h1>
+        <ul class="nav">
+            <li class="on">Popup Banner 01~</li>
+            <li>Popup Banner 06~</li>
+            <li>Popup Banner 11~</li>
+        </ul><!-- nav -->
         <div class="cardnews">
-            <p><img src="img/01.jpg"></p>
-            <p><img src="img/02.jpg"></p>
-            <p><img src="img/03.png"></p>
-            <p><img src="img/04.png"></p>
-            <p><img src="img/05.png"></p>
-            <p><img src="img/06.jpg"></p>
-            <p><img src="img/07.jpg"></p>
-            <p><img src="img/08.jpg"></p>
-            <p><img src="img/09.jpg"></p>
-            <p><img src="img/10.jpg"></p>
-            <p><img src="img/11.jpg"></p>
-            <p><img src="img/12.jpg"></p>
-            <p><img src="img/13.jpg"></p>
-            <p><img src="img/14.jpg"></p>
-            <p><img src="img/15.jpg"></p>
+            <figure>
+                <p class="thumb">
+                    <img src="img/01.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/02.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/03.png">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/04.png">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/05.png">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/06.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/07.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/08.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/09.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/10.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/11.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/12.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/13.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/14.jpg">
+                </p>
+            </figure>
+            <figure>
+                <p class="thumb">
+                    <img src="img/15.jpg">
+                </p>
+            </figure>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+
+        $('.nav li').on('click', function () {
+            let i = $(this).index();
+            $('html, body').scrollTop(slideWidth * 5 * i);
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+
+        let slideCount = $('figure').length;
+        let slideWidth = $('figure').width() + 20;
+        let totalWidth = slideWidth * slideCount + 450;
+
+        $('.cardnews').width(totalWidth);
+        $('body').height(totalWidth);
+
+        $(window).on('scroll', function () {
+
+            let scr = $(this).scrollTop();
+
+            $('.cardnews').stop().animate({
+                left: -scr
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>
