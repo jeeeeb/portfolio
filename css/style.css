@@ -852,7 +852,7 @@ section h2 {
     top: 50%;
     transform: translateY(-50%);
     left: 200px;
-    width: 851px;
+    width: 800px;
     transition: left 0.8s;
 }
 
