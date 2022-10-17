@@ -22,7 +22,6 @@ $(function () {
     let intro = $('#intro').offset().top;
     let about = $('#about').offset().top;
     let skills = $('#skills').offset().top;
-    let highdev = $('#highdev').offset().top;
     let Graphic = $('#Graphic').offset().top;
     let web = $('#web').offset().top;
     let contact = $('#contact').offset().top;
@@ -30,7 +29,7 @@ $(function () {
     $(window).scroll(function () {
         let scr = $(this).scrollTop();
         let moveBar = $('.skill');
-        if (scr >= skills && scr < highdev) {
+        if (scr >= skills && scr < Graphic) {
             moveBar.addClass('on');
         } else {
             moveBar.removeClass('on');
