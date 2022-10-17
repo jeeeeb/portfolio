@@ -444,6 +444,32 @@ section h2 {
     line-height: 1.4em;
 }
 
+@keyframes btn_colors {
+    0% {
+        background-color: #328eb2;
+    }
+
+    20% {
+        background-color: #fe5196;
+    }
+
+    40% {
+        background-color: #f7ff71;
+    }
+
+    60% {
+        background-color: #ff656b;
+    }
+
+    80% {
+        background-color: #7169f9;
+    }
+
+    100% {
+        background-color: #ff7c6d;
+    }
+}
+
 #Graphic {
     display: flex;
     align-items: center;
