@@ -407,7 +407,7 @@ section h2 {
 }
 
 .skills_in .css .skillBar .skill.on {
-    width: 85%;
+    width: 80%;
 }
 
 .skills_in .java .skillBar .skill.on {
@@ -424,6 +424,10 @@ section h2 {
 
 .skills_in .ilu .skillBar .skill.on {
     width: 90%;
+}
+
+.skills_in .figma .skillBar .skill.on {
+    width: 80%;
 }
 
 .skills_in .git .skillBar .skill.on {
